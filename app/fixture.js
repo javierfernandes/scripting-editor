@@ -7,6 +7,9 @@ export default `<html><body>
 
     <div data-type="dialogTitle">SANDRA</div>
     <div data-type="dialogText">How did you get here?</div>
+
+    <div data-type="dialogTitle">WILL</div>
+    <div data-type="dialogText">We swam.  The Atlantic, it's not that big really.</div>
   </div>
 
 </body></html>`
