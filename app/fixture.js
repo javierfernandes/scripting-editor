@@ -1,5 +1,10 @@
 export default `<html><body>
-  <h1>SimpleWriter</h1>
-  <p>This is the official <span data-type="comment" data-comment="A JavaScript library for web-based content editing">Substance</span> editor boilerplate example. Fork it, and create your own editor.</p>
-  <p>You can find the source code on <a href="http://github.com/substance/starter">Github</a>.</p>
+
+  <div data-type="scene">
+    <div data-type="sceneHeading">EXT. BRICK'S POOL - DAY</div>
+    <div data-type="sceneDescription">
+      Steel, in the middle of a heated phone call:
+    </div>
+  </div>
+
 </body></html>`
