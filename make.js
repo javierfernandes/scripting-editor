@@ -1,5 +1,4 @@
-let b = require('substance-bundler')
-let path = require('path')
+const b = require('substance-bundler')
 
 b.task('clean', function() {
   b.rm('./dist')
@@ -35,6 +34,6 @@ function _client(devMode) {
       format: 'umd',
       moduleName: 'app'
     },
-    buble: !devMode
+    buble: !devMode && { objectAssign: 'Object.assign' }
   })
 }
