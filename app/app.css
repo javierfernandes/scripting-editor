@@ -13,7 +13,7 @@
 @import '../lib/simple-writer/_simple-writer.css';
 
 /* SCENES */
-@import '../lib/Scene/_scene.css';
-@import '../lib/SceneHeading/_sceneHeading.css';
+@import '../lib/components/_scene.css';
+@import '../lib/components/SceneHeading/_sceneHeading.css';
 
 body { overflow: hidden; }
