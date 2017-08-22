@@ -5,7 +5,7 @@ import EditCommentTool from './EditCommentTool'
 import CommentConverter from './CommentConverter'
 
 /**
-  Comment package that can be imported by SimpleWriter
+  Comment package that can be imported by ScriptingEditor
 
   Provides a Comment node definition, a converter for HTML conversion,
   commands and tools for creation, and editing of comments.

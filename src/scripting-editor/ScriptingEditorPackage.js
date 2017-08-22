@@ -5,7 +5,7 @@ import {
 
 import BodyPackage from '../body/BodyPackage'
 import CommentPackage from '../comment/CommentPackage'
-import SimpleHTMLImporter from './SimpleHTMLImporter'
+import ScriptingHTMLImporter from './ScriptingHTMLImporter'
 
 import components from '../components/components'
 import shortcuts from '../config/shortcuts'
@@ -17,7 +17,7 @@ import styles from '../config/styles'
   from Substance, as well as custom node types.
 */
 export default {
-  name: 'simple-writer',
+  name: 'scripting-editor',
   configure: config => {
 
     config.defineSchema({
@@ -44,7 +44,7 @@ export default {
     config.import(CommentPackage, { toolGroup: 'annotations'} )
 
     // Override Importer/Exporter
-    config.addImporter('html', SimpleHTMLImporter)
+    config.addImporter('html', ScriptingHTMLImporter)
 
     styles(config)
     components(config)
