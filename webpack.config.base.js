@@ -1,10 +1,14 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './app/app.js',
+  entry: './app/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'dialed-webpack.bundle.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
@@ -14,8 +18,14 @@ module.exports = {
       { test: /\.(otf|eot|svg|ttf|woff|woff2)$/, loader: 'url-loader?limit=8192' },
       // css
       { test: /\.css$/, loader: 'style-loader!css-loader' },
-      // js
-      { test: /\.js?$/, exclude: /node_modules/, loaders: ['babel-loader'] }
+      // js, jsx
+      { test: /\.(js|jsx)?$/, exclude: /node_modules/, loaders: ['babel-loader'] }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: './app/index.html'
+    })
+  ]
 };
