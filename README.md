@@ -7,7 +7,7 @@ Adds components for Scenes, Dialogues, etc.
 
 Looks like this
 
-![image](https://user-images.githubusercontent.com/4428120/29422249-0657d850-834e-11e7-906f-77a8e9546e46.png)
+![image](https://user-images.githubusercontent.com/4428120/29575663-93c27498-873b-11e7-8d61-d47fbe94abc7.png)
 
 
 ## Install
