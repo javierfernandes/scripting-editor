@@ -15,8 +15,8 @@ Looks like this
 Now install dependencies and start the dev environment.
 
 ```bash
-$ npm install
-$ npm start
+$ yarn              # or npm install
+$ yarn start        # or npm start
 ```
 
-And navigate to `http://localhost:5555`.
+And navigate to `http://localhost:3000`.
