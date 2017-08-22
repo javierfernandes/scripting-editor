@@ -1,15 +1,15 @@
 import { Configurator, EditorSession } from 'substance'
-import SimpleWriter from '../lib/simple-writer/SimpleWriter'
-import SimpleWriterPackage from '../lib/simple-writer/SimpleWriterPackage'
+import ScriptingEditor from '../src/scripting-editor/ScriptingEditor'
+import ScriptingEditorPackage from '../src/scripting-editor/ScriptingEditorPackage'
 import fixture from './fixture'
 
-const cfg = new Configurator()
-cfg.import(SimpleWriterPackage)
+const configurator = new Configurator()
+configurator.import(ScriptingEditorPackage)
 
 window.onload = function() {
-  const importer = cfg.createImporter('html')
+  const importer = configurator.createImporter('html')
   const doc = importer.importDocument(fixture)
   
-  const editorSession = new EditorSession(doc, { configurator: cfg })
-  SimpleWriter.mount({ editorSession: editorSession }, document.body)
+  const editorSession = new EditorSession(doc, { configurator })
+  ScriptingEditor.mount({ editorSession }, document.body)
 }

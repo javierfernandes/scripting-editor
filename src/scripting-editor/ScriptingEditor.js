@@ -4,7 +4,7 @@ import { AbstractEditor, Toolbar} from 'substance'
   We extend from AbstractEditor which provides an abstract implementation
   that should be feasible for most editors.
 */
-class SimpleWriter extends AbstractEditor {
+class ScriptingEditor extends AbstractEditor {
 
   /*
     We render a toolbar, an editor for the body content
@@ -34,7 +34,7 @@ class SimpleWriter extends AbstractEditor {
     ).ref('contentPanel')
 
     el.append(
-      $$(SplitPane, {splitType: 'horizontal'}).append(
+      $$(SplitPane, { splitType: 'horizontal' }).append(
         $$('div').addClass('se-toolbar-wrapper').append(
           $$(Toolbar, {
             commandStates
@@ -47,4 +47,4 @@ class SimpleWriter extends AbstractEditor {
   }
 }
 
-export default SimpleWriter
+export default ScriptingEditor
