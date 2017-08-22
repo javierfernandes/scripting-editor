@@ -1,0 +1,98 @@
+.scene {
+  padding: 5px;
+}
+
+.scene:hover, .dialogue:hover {
+  position: relative;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  /*padding: 10px;*/
+}
+.scene:hover::before {
+  content: "Scene";
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 50%;
+  width: 100px;
+  padding: 0px 10px;
+  margin-left: -50px;
+  background: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.dialogue .container-node {
+  padding: 5px;
+}
+
+.dialogue:hover::before {
+  content: "Dialogue";
+  position: absolute;
+  display: block;
+  top: -5px;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  background: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.scene:focus, .dialogue:focus {
+  position: relative;
+  border: 1px solid var(--link-color);
+  border-radius: 5px;
+  /*padding: 10px;*/
+}
+
+.scene:focus::before {
+  content: "Scene";
+  position: absolute;
+  display: block;
+  top: -14px;
+  left: 50%;
+  width: 100px;
+  padding: 0px 10px;
+  margin-left: -50px;
+  background: #fff;
+  text-align: center;
+  color: var(--link-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sceneDescription {
+  color: gray;
+}
+
+.dialogTitle {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dialogText {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
+.sceneDescription {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+/* overriding theme's defaults */
+
+.sc-simple-writer .sc-container-editor > * {
+    margin: 10px 0px;
+}
+
+.sc-isolated-node.sm-default-style.sm-focused {
+  outline: 2px solid !important;
+  outline-color: rgba(10, 10, 200, 0.3) !important;
+}

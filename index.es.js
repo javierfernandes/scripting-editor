@@ -1,5 +1,5 @@
 /*
-  Expose SimpleWriter as an ES6 module
+  Expose Editor as an ES6 module
 */
 
 export { default as SimpleWriter } from './lib/simple-writer/SimpleWriter'

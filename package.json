@@ -1,18 +1,32 @@
 {
-  "name": "substance-simple-writer",
-  "description": "Reference implementation for a custom Substance editor",
+  "name": "dialed",
+  "version": "0.0.1-alpha.01",
+  "description": "DialEd: Dialogue Editor",
   "module": "index.es.js",
   "jsnext:main": "index.es.js",
   "devDependencies": {
-    "substance": "1.0.0-beta.6.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-array-includes": "^2.0.3",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
     "font-awesome": "4.5.0",
-    "substance-bundler": "0.7.2"
+    "image-webpack-loader": "^3.3.1",
+    "style-loader": "^0.18.2",
+    "substance": "1.0.0-beta.6.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-dashboard": "^0.4.0",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "build": "node make",
-    "start": "node make -s -w"
+    "start": "webpack-dev-server --history-api-fallback --progress --host 0.0.0.0 --port 3000 --inline --hot --config webpack.config.dev.js --quiet",
+    "build": "NODE_ENV=production webpack --progress --display-modules -p --display-reasons --color --verbose --config webpack.config.dev.js"
   },
-  "version": "1.0.0-beta.6",
   "files": [
     "app",
     "dist",

@@ -1,20 +1,22 @@
-# SimpleWriter
+# Scripting Editor
 
-SimpleWriter is the official Substance starter example. It sets up a minimal environment for Substance editor development. Fork this code and create your own editor.
-
+POC based on the "SimpleWriter" example of [Substance](http://substance.io/)
 Read the [tutorial](http://substance.io/docs/beta5/your-first-editor.html).
 
-## Install
+Adds components for Scenes, Dialogues, etc.
 
-```bash
-$ git clone https://github.com/substance/simple-writer.git
-```
+Looks like this
+
+![image](https://user-images.githubusercontent.com/4428120/29422249-0657d850-834e-11e7-906f-77a8e9546e46.png)
+
+
+## Install
 
 Now install dependencies and start the dev environment.
 
 ```bash
-$ npm install
-$ npm start
+$ yarn              # or npm install
+$ yarn start        # or npm start
 ```
 
-And navigate to `http://localhost:5555`.
+And navigate to `http://localhost:3000`.
